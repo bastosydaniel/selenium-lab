@@ -10,6 +10,9 @@ import java.util.Date;
 public class ProdutoPO extends BasePO{
     @FindBy(id = "btn-adicionar")
     public WebElement buttonCriar;
+
+    @FindBy(xpath = "//*[@id=\"cadastro-produto\"]/div")
+    public WebElement divCadastro;
     @FindBy(xpath = "/html/body/div/div[2]/table/tbody/tr/td[6]/button[1]")
     public WebElement buttonEditar;
     @FindBy(xpath = "/html/body/div/div[2]/table/tbody/tr/td[6]/button[2]")
