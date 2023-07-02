@@ -32,7 +32,7 @@ public class ProdutoTest extends BaseTest{
     }
 
     @Test
-    public void TC005_naoDeveCadastrarProdutoSemTodosCamposPreenchidos () throws InterruptedException {
+    public void TC005_deveCadastrarApenasProdutosComTodosCamposPreenchidos () throws InterruptedException {
         produtoPage.buttonCriar.click();
 
         String mensagem = produtoPage.obterMensagem();
